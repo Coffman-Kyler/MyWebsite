@@ -12,7 +12,7 @@
 
     /* Title bar */
     .title-bar {
-      background-color: #CC5500;   /* darker background */
+      background-color: #CC5500;   /* burnt orange */
       color: white;
       text-align: center;
       padding: 15px 0;
@@ -38,21 +38,27 @@
 
     .navbar a {
       color: white;
-      padding: 14px 20px;
+      padding: 10px 20px;
       text-decoration: none;
-      text-align: center;
+      margin: 0 8px;           /* space between bubbles */
+      border-radius: 25px;     /* bubble style */
+      transition: background-color 0.3s, color 0.3s;
     }
 
     .navbar a:hover {
-      background-color: #575757;
+      background-color: #CC5500; /* burnt orange on hover */
+      color: white;
     }
+  </style>
+</head>
+<body>
 
   <!-- Title Bar -->
   <div class="title-bar">
     Kyler Coffman
   </div>
 
-  <!-- HTML Navigation Tabs -->
+  <!-- Navigation Tabs -->
   <div class="navbar">
     <a href="About_me.html">About Me</a>
     <a href="certifications.html">Certifications</a>
@@ -61,11 +67,3 @@
 
 </body>
 </html>
-
-
-
-
-
-
-
-
