@@ -1,25 +1,70 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <style>
-        body, html {
-            text-align: center;
-            background-color: lightblue;
-            color: black
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Professional Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    /* Navigation bar */
+    .navbar {
+      display: flex;
+      background-color: #333;
+      padding: 10px;
+    }
+    .navbar a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      text-align: center;
+    }
+    .navbar a:hover {
+      background-color: #575757;
+    }
+    /* Sections */
+    section {
+      padding: 60px;
+      height: 100vh; /* full screen height per section */
+    }
+    #home { background: #f4f4f4; }
+    #about { background: #ddd; }
+    #portfolio { background: #bbb; }
+    #contact { background: #999; }
+  </style>
 </head>
-    <h1>
-        Hey, I'm Kyler Coffman
-    </h1>
-    <body>
-        <h2>About me</h2>
-        <p>
-            I am a Cyber Security enthusiast, who currently works for Norton Healthcare as a Client / Server Analyst.
-        </p>
-        <h2>What I'm working on</h2>
-        <p>
-            I have finished my CompTIA Network +. I will next be completing my CompTIA Security +.
-        </p>
-    </body>
-</html>
+<body>
 
+  <!-- Navigation Tabs -->
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About Me</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- Website Sections -->
+  <section id="home">
+    <h1>Welcome</h1>
+    <p>This is my professional homepage.</p>
+  </section>
+
+  <section id="about">
+    <h1>About Me</h1>
+    <p>Information about my background, skills, and career.</p>
+  </section>
+
+  <section id="portfolio">
+    <h1>Portfolio</h1>
+    <p>Showcasing my work and projects.</p>
+  </section>
+
+  <section id="contact">
+    <h1>Contact</h1>
+    <p>Ways to get in touch with me.</p>
+  </section>
+
+</body>
+</html>
