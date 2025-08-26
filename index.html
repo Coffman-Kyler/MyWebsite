@@ -9,32 +9,50 @@
       font-family: Arial, sans-serif;
       margin: 0;
     }
+
+    /* Title bar */
+    .title-bar {
+      background-color: #222;   /* darker background */
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 24px;
+      font-weight: bold;
+      position: fixed;   /* stays at top */
+      top: 0;
+      width: 100%;
+      z-index: 1001;     /* stays above navbar */
+    }
+
     /* Navigation bar */
     .navbar {
       display: flex;
+      justify-content: center;
       background-color: #333;
       padding: 10px;
       position: fixed;
-      top: 0;
+      top: 60px;   /* 👈 moves nav under title bar */
       width: 100%;
-      z-index 1000;
+      z-index: 1000;
     }
+
     .navbar a {
       color: white;
       padding: 14px 20px;
       text-decoration: none;
       text-align: center;
     }
+
     .navbar a:hover {
       background-color: #575757;
     }
 
-    
     /* Sections */
     section {
-      padding: 80px 20px;
-      height: 100vh; /* full screen height per section */
+      padding: 120px 20px; /* 👈 more padding so text isn’t hidden */
+      height: 100vh;
     }
+
     #home { background: #f4f4f4; }
     #about { background: #ddd; }
     #portfolio { background: #bbb; }
@@ -42,6 +60,11 @@
   </style>
 </head>
 <body>
+
+  <!-- Title Bar -->
+  <div class="title-bar">
+    Kyler Coffman
+  </div>
 
   <!-- Navigation Tabs -->
   <div class="navbar">
@@ -74,4 +97,3 @@
 
 </body>
 </html>
-
