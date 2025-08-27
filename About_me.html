@@ -3,19 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me</title>
+  <title>About Me - Kyler Coffman</title>
   <style>
     body {
       margin: 0;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(#2E2E2E);
+      background: linear-gradient(#2E2E2E, #1A1A1A);
       color: #fff;
+      display: flex;
+      justify-content: center;
+      padding-top: 160px; /* space for fixed title/nav */
     }
 
+    /* Title bar */
+    .title-bar {
+      background-color: #CC5500; /* burnt orange */
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 28px;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1001;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      letter-spacing: 1px;
+    }
+
+    /* Navigation bar */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      background-color: #222;
+      padding: 12px;
+      position: fixed;
+      top: 60px;
+      width: 100%;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .navbar a {
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin: 0 10px;
+      border-radius: 25px;
+      font-size: 16px;
+      transition: background-color 0.3s, color 0.3s, transform 0.2s;
+    }
+
+    .navbar a:hover {
+      background-color: #CC5500;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* Slide card */
     .slide {
       background: rgba(255, 255, 255, 0.1);
       padding: 3rem;
@@ -67,12 +112,27 @@
   </style>
 </head>
 <body>
+
+  <!-- Title Bar -->
+  <div class="title-bar">
+    Kyler Coffman
+  </div>
+
+  <!-- Navigation Tabs -->
+  <div class="navbar">
+    <a href="About_me.html">About Me</a>
+    <a href="certifications.html">Certifications</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- About Me Card -->
   <div class="slide">
     <img src="https://via.placeholder.com/150" alt="Profile Picture">
     <h1>Kyler Coffman</h1>
     <h2>CyberSecurity Enthusiast • Problem Solver</h2>
     <p>
-      Hi, I’m Kyler! I’m passionate about CyberSecurity, VMWare, and penetration testing. I am currently working for Norton Healthcare in their Data Center Operations team.
+      Hi, I’m Kyler! I’m passionate about CyberSecurity, VMWare, and penetration testing. 
+      I am currently working for Norton Healthcare in their Data Center Operations team.
     </p>
     <div class="tags">
       <span class="tag">VMWare</span>
@@ -81,6 +141,6 @@
       <span class="tag">Data Recovery / Protection</span>
     </div>
   </div>
+
 </body>
 </html>
-
