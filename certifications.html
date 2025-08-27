@@ -1,1 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Certifications</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #2E2E2E; /* dark gray */
+      color: #F5F5F5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .container {
+      background: #3E3E3E;
+      border-left: 10px solid #CC5500; /* burnt orange accent */
+      border-radius: 1rem;
+      padding: 2.5rem 3rem;
+      max-width: 700px;
+      width: 100%;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+    }
+
+    h1 {
+      color: #CC5500;
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .cert-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .cert-item {
+      background: #505050;
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+      border-radius: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .cert-item:hover {
+      background: #CC5500;
+      color: #fff;
+      transform: translateX(5px);
+    }
+
+    .cert-title {
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .cert-issuer {
+      font-size: 0.95rem;
+      color: #E5D5B6; /* beige accent */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>My Certifications</h1>
+    <ul class="cert-list">
+      <li class="cert-item">
+        <span class="cert-title">CompTIA Network+</span>
+        <span class="cert-issuer">CompTIA</span>
+      </li>
+      <li class="cert-item">
+        <span class="cert-title">Associate of Science in Cybersecurity</span>
+        <span class="cert-issuer">College / University</span>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
 
