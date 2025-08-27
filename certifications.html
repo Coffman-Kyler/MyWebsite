@@ -86,9 +86,6 @@
       padding: 1rem 1.5rem;
       margin: 1rem 0;
       border-radius: 0.75rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       transition: transform 0.2s ease, background 0.2s ease;
     }
 
@@ -106,6 +103,27 @@
     .cert-issuer {
       font-size: 0.95rem;
       color: #E5D5B6; /* beige accent */
+    }
+
+    /* Progress bar */
+    .progress-container {
+      margin-top: 0.8rem;
+      background: #2E2E2E;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 18px;
+      width: 100%;
+    }
+
+    .progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, #CC5500, #ff914d);
+      width: 50%; /* <-- Progress here */
+      text-align: right;
+      font-size: 0.8rem;
+      color: white;
+      padding-right: 6px;
+      box-sizing: border-box;
     }
   </style>
 </head>
@@ -128,12 +146,19 @@
     <h1>My Certifications</h1>
     <ul class="cert-list">
       <li class="cert-item">
-        <span class="cert-title">CompTIA Network+</span>
+        <span class="cert-title">CompTIA Network+</span><br>
         <span class="cert-issuer">CompTIA</span>
       </li>
       <li class="cert-item">
-        <span class="cert-title">Associate of Science in Cybersecurity</span>
+        <span class="cert-title">Associate of Science in Cybersecurity</span><br>
         <span class="cert-issuer">College / University</span>
+      </li>
+      <li class="cert-item">
+        <span class="cert-title">CompTIA Security+</span><br>
+        <span class="cert-issuer">In Progress</span>
+        <div class="progress-container">
+          <div class="progress-bar">50%</div>
+        </div>
       </li>
     </ul>
   </div>
