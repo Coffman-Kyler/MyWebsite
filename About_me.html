@@ -8,8 +8,8 @@
     body {
       margin: 0;
       font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(#2E2E2E, #1A1A1A);
-      color: #fff;
+      background: #0a0f1c;
+      color: #e0e0e0;
       display: flex;
       justify-content: center;
       padding-top: 160px; /* space for fixed title/nav */
@@ -17,9 +17,12 @@
 
     /* Title bar */
     .title-bar {
-      background-color: #CC5500; /* burnt orange */
-      color: white;
-      text-align: center;
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      color: #00e6e6;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
       padding: 15px 0;
       font-size: 28px;
       font-weight: bold;
@@ -27,48 +30,59 @@
       top: 0;
       width: 100%;
       z-index: 1001;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-      letter-spacing: 1px;
+      box-shadow: 0 2px 8px rgba(0, 255, 255, 0.4);
+      letter-spacing: 2px;
+      text-shadow: 0 0 6px #00e6e6;
+    }
+
+    .title-bar svg {
+      width: 34px;
+      height: 34px;
+      fill: #00e6e6;
+      filter: drop-shadow(0 0 6px #00e6e6);
     }
 
     /* Navigation bar */
     .navbar {
       display: flex;
       justify-content: center;
-      background-color: #222;
+      background-color: #111827;
       padding: 12px;
       position: fixed;
       top: 60px;
       width: 100%;
       z-index: 1000;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 6px rgba(0,255,255,0.2);
     }
 
     .navbar a {
-      color: white;
+      color: #00e6e6;
       padding: 10px 20px;
       text-decoration: none;
       margin: 0 10px;
       border-radius: 25px;
       font-size: 16px;
-      transition: background-color 0.3s, color 0.3s, transform 0.2s;
+      font-weight: bold;
+      transition: background-color 0.3s, color 0.3s, transform 0.2s, box-shadow 0.3s;
     }
 
     .navbar a:hover {
-      background-color: #CC5500;
-      color: white;
+      background-color: #00e6e6;
+      color: #111827;
+      box-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6;
       transform: scale(1.05);
     }
 
     /* Slide card */
     .slide {
-      background: rgba(255, 255, 255, 0.1);
+      background: rgba(17, 24, 39, 0.85);
       padding: 3rem;
       border-radius: 1.5rem;
       text-align: center;
       max-width: 700px;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
-      backdrop-filter: blur(10px);
+      box-shadow: 0 0 20px rgba(0, 230, 230, 0.4);
+      border: 1px solid rgba(0,230,230,0.5);
+      backdrop-filter: blur(12px);
     }
 
     .slide img {
@@ -76,25 +90,30 @@
       height: 150px;
       object-fit: cover;
       border-radius: 50%;
-      border: 4px solid #fff;
+      border: 4px solid #00e6e6;
+      box-shadow: 0 0 12px #00e6e6;
       margin-bottom: 1rem;
     }
 
     h1 {
       font-size: 2.5rem;
       margin: 0.5rem 0;
+      color: #00e6e6;
+      text-shadow: 0 0 8px #00e6e6;
     }
 
     h2 {
       font-size: 1.5rem;
       font-weight: normal;
-      opacity: 0.85;
+      opacity: 0.9;
       margin: 0.25rem 0 1rem;
+      color: #c9fafa;
     }
 
     p {
       font-size: 1.1rem;
       line-height: 1.6;
+      color: #e0e0e0;
     }
 
     .tags {
@@ -103,11 +122,20 @@
 
     .tag {
       display: inline-block;
-      background: rgba(255,255,255,0.2);
+      background: rgba(0,230,230,0.15);
       padding: 0.4rem 1rem;
       border-radius: 999px;
       margin: 0.3rem;
       font-size: 0.9rem;
+      border: 1px solid rgba(0,230,230,0.5);
+      color: #00e6e6;
+      text-shadow: 0 0 6px #00e6e6;
+      transition: transform 0.2s ease, box-shadow 0.3s ease;
+    }
+
+    .tag:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff;
     }
   </style>
 </head>
@@ -115,6 +143,10 @@
 
   <!-- Title Bar -->
   <div class="title-bar">
+    <!-- Cybersecurity Icon -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 1l9 4v6c0 5-3.9 9.7-9 11-5.1-1.3-9-6-9-11V5l9-4zm0 6a3 3 0 00-3 3v2h6V10a3 3 0 00-3-3zm-4 5v4h8v-4H8z"/>
+    </svg>
     Kyler Coffman
   </div>
 
@@ -129,9 +161,9 @@
   <div class="slide">
     <img src="https://via.placeholder.com/150" alt="Profile Picture">
     <h1>Kyler Coffman</h1>
-    <h2>CyberSecurity Enthusiast • Problem Solver</h2>
+    <h2>Cybersecurity Enthusiast • Problem Solver</h2>
     <p>
-      Hi, I’m Kyler! I’m passionate about CyberSecurity, VMWare, and penetration testing. 
+      Hi, I’m Kyler! I’m passionate about cybersecurity, VMWare, and penetration testing. 
       I am currently working for Norton Healthcare in their Data Center Operations team.
     </p>
     <div class="tags">
@@ -144,3 +176,4 @@
 
 </body>
 </html>
+
